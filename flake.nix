@@ -27,6 +27,9 @@
 					
 					# Debugging Tools
 					gdb
+
+					# Virtualize the OS
+					qemu_kvm
 				];
 
 				shellHook = ''

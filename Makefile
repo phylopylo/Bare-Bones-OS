@@ -24,3 +24,7 @@ generate-iso: build/myos
 	cp grub.cfg isodir/boot/grub/grub.cfg
 	grub-mkrescue -o build/myos.iso isodir
 .PHONY: generate-iso
+
+qemu:
+	qemu-system-i386 -cdrom build/myos.iso
+.PHONY: qemu
