@@ -17,6 +17,8 @@
 					# Build Tools
 					gnumake
 
+					xorriso
+
 					pkgsCross.i686-embedded.buildPackages.binutils
 					pkgsCross.i686-embedded.buildPackages.gcc
 					
