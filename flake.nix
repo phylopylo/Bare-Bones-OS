@@ -15,9 +15,10 @@
 			default = pkgs.mkShell {
 				packages = with pkgs; [
 					# Build Tools
-					cmake
-					gcc
 					gnumake
+
+					pkgsCross.i686-embedded.buildPackages.binutils
+					pkgsCross.i686-embedded.buildPackages.gcc
 					
 					# Bootloader
 					grub2
